@@ -30,7 +30,12 @@ a[:, 3] = [1, 2] #different values on different rows.
 
 #3-d example
 b = np.array([[[1,2],[3,4]],[[5,6],[7,8]]])
-print(b)
+#print(b)
 
 #get specific element from 3-d array
-print(b[0,1,1])
+#print(b[0,1,1])
+#print(b[:,1,:]) #get arrays at the index 1 across the whole array.
+
+#replace and ensure that the new items have the same dimension as the those to be replaced.
+b[:,1,:] = [[9,9],[8,8]]
+print(b[:,1,:])
